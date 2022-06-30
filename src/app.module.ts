@@ -7,6 +7,8 @@ import { ProductService } from './product/product.service';
 import { PRODUCT, Product_Token } from './product/product.token';
 import { dbConnectionFactory } from './connection.provider';
 import { ClientService } from './client/client.service';
+import { RequestdemoService } from './requestdemo/requestdemo.service';
+import { TransientdemoService } from './transientdemo/transientdemo.service';
 
 @Module({
     imports: [ShoppingLibModule],
@@ -19,7 +21,9 @@ import { ClientService } from './client/client.service';
         AppService, 
         ProductService,
         dbConnectionFactory,
-        ClientService
+        ClientService,
+        RequestdemoService,
+        TransientdemoService,
     ],
 })
 export class AppModule { }
