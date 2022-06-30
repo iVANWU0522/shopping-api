@@ -1,4 +1,18 @@
 {
   "collection": "@nestjs/schematics",
-  "sourceRoot": "src"
+  "sourceRoot": "src",
+  "projects": {
+    "shopping-lib": {
+      "type": "library",
+      "root": "libs/shopping-lib",
+      "entryFile": "index",
+      "sourceRoot": "libs/shopping-lib/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/shopping-lib/tsconfig.lib.json"
+      }
+    }
+  },
+  "compilerOptions": {
+    "webpack": true
+  }
 }
